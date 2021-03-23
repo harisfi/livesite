@@ -1,0 +1,80 @@
+html,
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    padding: 15px;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+    }
+}
+
+.flex-equal>* {
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .flex-md-equal>* {
+    flex: 1;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bg-2 {
+    border-radius: 0 !important;
+    }
+    .bg-3 {
+    border-radius: 0 0 15px 15px !important;
+    }
+}
+
+.container {
+    max-width: 800px;
+    border-radius: 15px;
+}
+
+.bg-1 {
+    background-color: #FFF;
+    border-radius: 15px 15px 0 0;
+}
+
+.bg-2 {
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 15px;
+}
+
+.bg-3 {
+    background-color: hsla(179, 62%, 43%, 0.8);
+    border-radius: 0 0 15px 0;
+}
+
+.fc-1 {color: hsl(179, 62%, 43%);}
+.fc-2 {color: hsl(71, 73%, 54%);}
+.fc-3 {color: hsl(204, 43%, 93%);}
+.fc-4 {color: hsl(218, 22%, 67%);}
+.btn-primary {
+    background-color: hsl(71, 73%, 54%);
+    border-color: hsl(71, 73%, 54%);
+}
+.btn-primary:hover {
+    background-color: hsl(71, 60%, 49%);
+    border-color: hsl(71, 60%, 54%);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
