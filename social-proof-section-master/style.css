@@ -1,0 +1,58 @@
+
+html,
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+h1,
+.rating>p {
+    color: hsl(300, 43%, 22%);
+}
+
+h1+p {
+    color: hsl(303, 10%, 53%);
+}
+
+.rating {
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+}
+
+.profile {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .profiles:nth-child(2) .profile {
+    margin-top: 20px;
+    }
+
+    .profiles:nth-child(3) .profile {
+    margin-top: 40px;
+    }
+
+    h1,
+    h1+p {
+    text-align: left;
+    }
+}
+
+.verified {
+    color: hsl(333, 80%, 67%);
+}
+
+.qt {
+    font-size: .9em;
+}
