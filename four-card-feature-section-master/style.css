@@ -17,12 +17,11 @@ body {
 }
 
 .container-ssm {
-    max-width: 380px;
+    max-width: 500px;
 }
 
 p {
     color: hsl(229, 6%, 66%);
-    font-size: .7em;
 }
 
 .mt-6 {
@@ -34,7 +33,7 @@ p {
     border-radius: 8px;
     box-shadow: 0 9px 8px hsla(212, 45%, 64%, 0.25);
     overflow: hidden;
-    width: 17rem;
+    max-width: 22rem;
 }
 
 .top-cr {
@@ -62,7 +61,7 @@ p {
 }
 
 .card-text {
-    font-size: .6em;
+    font-size: .8em;
 }
 
 .w-22 {
