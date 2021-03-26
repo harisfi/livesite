@@ -38,6 +38,9 @@ button {
   border-color: #fff;
   color: #fff;
 }
+.social:not(:last-child) {
+  margin-right: 10px;
+}
 .social:hover,
 .social:active {
   border-color: hsl(300, 69%, 71%);
