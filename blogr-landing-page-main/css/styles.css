@@ -1,0 +1,17 @@
+@tailwind base;
+
+@tailwind components;
+
+.bg-intro {
+    background: url(images/bg-pattern-intro.svg) 28% 50%/480vh no-repeat;
+}
+
+.navbar {
+    @apply text-white opacity-75 duration-300 font-semibold py-2 px-4 inline-flex items-center;
+}
+
+.footer-link {
+    @apply opacity-75 hover:opacity-100 hover:underline duration-300 my-1;
+}
+
+@tailwind utilities;
