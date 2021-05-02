@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,600;1,300;1,600&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(356, 100%, 66%); }
+    body {
+      background-color: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <!-- intro -->
+  <div class="h-screen bg-gradient-to-br from-grads-ivl to-grads-il rounded-bl-intr font-Ubuntu">
+    <div class="container-full h-full bg-intro rounded-bl-intr md:py-14 py-12 md:px-48 px-4">
+      <div class="flex flex-row flex-wrap justify-between">
+        <div class="flex flex-row flex-wrap">
+          <img class="mr-12" src="../images/logo.svg" alt="Logo">
+          
+          <div class="md:inline-block hidden relative">
+            <button id="d_product" class="navbar focus:outline-none">
+              <span class="mr-1">Product</span>
+              <svg id="ds_product" class="fill-current h-4 w-4 duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+              </svg>
+            </button>
+            <ul id="dm_product" class="absolute hidden bg-white rounded text-gray-700 py-2 shadow-2xl">
+              <li>
+                <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">Overview</a>
+              </li>
+              <li>
+                <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">Pricing</a>
+              </li>
+              <li>
+                <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">Marketplace</a>
+              </li>
+              <li>
+                <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">Features</a>
+              </li>
+              <li>
+                <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">Integrations</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="md:inline-block hidden relative">
+            <button id="d_company" class="navbar focus:outline-none">
+              <span class="mr-1">Company</span>
+              <svg id="ds_company" class="fill-current h-4 w-4 duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+              </svg>
+            </button>
+            <ul id="dm_company" class="absolute hidden bg-white rounded text-gray-700 py-2 shadow-2xl">
+              <li>
+                <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">About</a>
+              </li>
+              <li>
+                <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">Team</a>
+              </li>
+              <li>
+                <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">Blog</a>
+              </li>
+              <li>
+                <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">Careers</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="md:inline-block hidden relative">
+            <button id="d_connect" class="navbar focus:outline-none">
+              <span class="mr-1">Connect</span>
+              <svg id="ds_connect" class="fill-current h-4 w-4 duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+              </svg>
+            </button>
+            <ul id="dm_connect" class="absolute hidden bg-white rounded text-gray-700 py-2 shadow-2xl">
+              <li>
+                <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">Contact</a>
+              </li>
+              <li>
+                <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">Newsletter</a>
+              </li>
+              <li>
+                <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="md:block hidden">
+          <div class="group inline-block">
+            <button class="navbar focus:outline-none">
+              Login
+            </button>
+          </div>
+          <button class="bg-white hover:bg-primary-vlr text-primary-lr hover:text-white duration-300 rounded-full font-semibold py-2 px-8 focus:outline-none">
+            Sign Up
+          </button>
+        </div>
+        <div class="md:hidden block">
+          <button id="btnMenu" type="button" class="inline-flex items-center justify-center p-2 text-white focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg id="ply3" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="close" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          <div id="menus" class="flex flex-col text-center absolute left-0 m-4 bg-white rounded w-11/12 shadow-2xl hidden">
+            <div class="group">
+              <button id="m_product" class="navbar text-black w-full justify-center focus:outline-none">
+                <span class="mr-1">Product</span>
+                <svg id="ms_product" class="fill-current h-4 w-4 text-primary-lr" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                </svg>
+              </button>
+              <ul id="mm_product" class="hidden bg-gray-200 m-4 rounded text-gray-700 py-2">
+                <li>
+                  <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">Overview</a>
+                </li>
+                <li>
+                  <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">Pricing</a>
+                </li>
+                <li>
+                  <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">Marketplace</a>
+                </li>
+                <li>
+                  <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">Features</a>
+                </li>
+                <li>
+                  <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">Integrations</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="group">
+              <button id="m_company" class="navbar text-black w-full justify-center focus:outline-none">
+                <span class="mr-1">Company</span>
+                <svg id="ms_company" class="fill-current h-4 w-4 text-primary-lr" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                </svg>
+              </button>
+              <ul id="mm_company" class="hidden bg-gray-200 m-4 rounded text-gray-700 py-2">
+                <li>
+                  <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">About</a>
+                </li>
+                <li>
+                  <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">Team</a>
+                </li>
+                <li>
+                  <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">Blog</a>
+                </li>
+                <li>
+                  <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">Careers</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="group">
+              <button id="m_connect" class="navbar text-black w-full justify-center focus:outline-none">
+                <span class="mr-1">Connect</span>
+                <svg id="ms_connect" class="fill-current h-4 w-4 text-primary-lr" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                </svg>
+              </button>
+              <ul id="mm_connect" class="hidden bg-gray-200 m-4 rounded text-gray-700 py-2">
+                <li>
+                  <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">Contact</a>
+                </li>
+                <li>
+                  <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">Newsletter</a>
+                </li>
+                <li>
+                  <a class="hover:text-black px-4 py-2 block whitespace-no-wrap"href="#">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex flex-col items-center p-4">
+              <div class="group inline-block">
+                <button class="navbar text-black focus:outline-none">
+                  Login
+                </button>
+              </div>
+              <button class="bg-white bg-gradient-to-r from-grads-ivl to-grads-il text-white rounded-full font-semibold py-2 px-8 w-max focus:outline-none">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center h-full flex flex-col justify-center">
+        <div>
+          <h1 class="font-Overpass text-white font-semibold md:text-6xl text-4xl mb-4">A modern publishing platform</h1>
+          <h2 class="text-lg text-white mb-8">Grow your audience and build your online brand</h2>
+          <button class="border border-white hover:border-primary-vlr bg-white hover:bg-primary-vlr text-primary-lr hover:text-white duration-300 rounded-full font-semibold py-2 px-4 mr-1 focus:outline-none">
+            Start for Free
+          </button>
+          <button class="border border-white hover:bg-white hover:text-primary-vlr rounded-full text-white font-semibold py-2 px-4 ml-1 focus:outline-none">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <div class="container-full font-Overpass text-primary-vdb pt-32 md:bg-editor-desktop md:bg-no-repeat md:bg-155c md:bg-60">
+    <span class="md:text-4xl text-2xl text-center font-semibold block w-auto md:pb-12 pb-4">Designed for the future</span>
+    <div class="flex flex-2">
+      <div class="md:pl-32 md:pr-0 px-4">
+        <div class="md:hidden block p-4">
+          <img src="../images/illustration-editor-mobile.svg" alt="illustration editor mobile">
+        </div>
+        <div class="md:p-8 px-10 py-4 md:text-left text-center">
+          <span class="text-2xl font-semibold">Introducing an extensible editor</span>
+          <p class="mt-4 md:text-base text-sm">
+            Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+            change the looks of a blog.
+          </p>
+        </div>
+        <div class="md:p-8 px-10 py-4 md:text-left text-center">
+          <span class="text-2xl font-semibold">Robust content management</span>
+          <p class="mt-4 md:text-base text-sm">
+            Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+          </p>
+        </div>
+      </div>
+      <div class="md:p-80 p-0"></div>
+    </div>
+  </div>
+
+
+
+  <div class="flex container-full font-Overpass text-white">
+    <img class="absolute md:left-5" src="../images/illustration-phones.svg" alt="illustration phones">
+    <div class="bg-gradient-to-tr from-grads-bvg to-grads-bvd rounded-tr-intr rounded-bl-intr  md:my-16 mt-48 mb-16">
+      <div class="flex rounded-tr-intr rounded-bl-intr py-16 bg-pattern-circles bg-no-repeat md:bg-8080 bg-50300 md:bg-auto bg-150">
+        <div class="md:px-72 px-0"></div>
+        <div class="md:text-left text-center md:p-20 pt-32 pb-4 px-4">
+          <span class="text-4xl font-semibold">State of the Art Infrastructure</span>
+          <p class="mt-4">
+            With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div class="container-full font-Overpass text-primary-vdb md:pt-32 pb-12 md:bg-laptop-desktop md:bg-no-repeat md:bg-66-c md:bg-70">
+    <img class="md:hidden block p-4" src="../images/illustration-laptop-mobile.svg" alt="illustration laptop mobile">
+    <div class="flex flex-2">
+      <div class="md:p-80 p-0"></div>
+      <div class="md:pt-20 md:pb-0 md:pr-36 md:pl-0 p-4">
+        <div class="md:p-8 p-4 md:text-left text-center">
+          <span class="text-2xl font-semibold">Free, open, simple</span>
+          <p class="mt-4">
+            Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+          </p>
+        </div>
+        <div class="md:p-8 p-4 md:text-left text-center">
+          <span class="text-2xl font-semibold">Powerful tooling</span>
+          <p class="mt-4">
+            Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+            capable of producing even the most complicated sites.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <div class="container-full bg-neutral-vdb text-white rounded-tr-intr">
+    <div class="flex flex-wrap md:flex-row flex-col justify-between md:py-16 md:pl-36 md:pr-64 p-12 md:text-left text-center">
+      <div class="p-8 md:block flex justify-center">
+        <img src="../images/logo.svg" alt="logo">
+      </div>
+      <div class="p-8 flex flex-col">
+        <div class="mb-6">Product</div>
+        <a href="#" class="footer-link">Overview</a>
+        <a href="#" class="footer-link">Pricing</a>
+        <a href="#" class="footer-link">Marketplace</a>
+        <a href="#" class="footer-link">Features</a>
+        <a href="#" class="footer-link">Integrations</a>
+      </div>
+      <div class="p-8 flex flex-col">
+        <div class="mb-6">Company</div>
+        <a href="#" class="footer-link">About</sapan>
+        <a href="#" class="footer-link">Team</a>
+        <a href="#" class="footer-link">Blog</a>
+        <a href="#" class="footer-link">Careers</a>
+      </div>
+      <div class="p-8 flex flex-col">
+        <div class="mb-6">Connect</div>
+        <a href="#" class="footer-link">Contact</a>
+        <a href="#" class="footer-link">Newsletter</a>
+        <a href="#" class="footer-link">LinkedIn</a>
+      </div>
+    </div>
+    <div class="attribution pb-2">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded&nbsp;by&nbsp;<a href="https://github.com/harisfi">M&nbsp;Haris&nbsp;Firmansyah</a>.
+    </div>
+  </div>
+</body>
+<script src="main.js"></script>
+</html>

@@ -3,7 +3,7 @@
 @tailwind components;
 
 .bg-intro {
-    background: url(images/bg-pattern-intro.svg) 28% 50%/480vh no-repeat;
+    background: url(../images/bg-pattern-intro.svg) 28% 50%/480vh no-repeat;
 }
 
 .navbar {
