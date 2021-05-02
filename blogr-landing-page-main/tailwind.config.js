@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'editor-desktop': 'url(../images/illustration-editor-desktop.svg)',
-        'pattern-circles': 'url(../images/bg-pattern-circles.svg)',
-        'laptop-desktop': 'url(../images/illustration-laptop-desktop.svg)'
+        'editor-desktop': 'url(./images/illustration-editor-desktop.svg)',
+        'pattern-circles': 'url(./images/bg-pattern-circles.svg)',
+        'laptop-desktop': 'url(./images/illustration-laptop-desktop.svg)'
       },
       backgroundPosition: {
         '66-c': '-66% center',
