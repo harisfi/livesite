@@ -2852,7 +2852,7 @@ ol {
 }
 
 .hero-area .hero-content h1 {
-  font-size: 42px;
+  font-size: 48px;
   font-weight: 800;
   line-height: 50px;
   color: #061E5C;
@@ -2865,7 +2865,7 @@ ol {
 
 .hero-area .hero-content p {
   margin-top: 30px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -3522,7 +3522,7 @@ ol {
     Testimonial CSS
 ========================================*/
 .testimonials {
-  background-color: #F0F3FA;
+  /* background-color: #F0F3FA; */
   position: relative;
   padding-bottom: 160px !important;
 }
@@ -3595,7 +3595,7 @@ ol {
 }
 
 .testimonials .single-testimonial {
-  background-color: #fff;
+  background-color: #F0F3FA;
   border: 1px solid #eee;
   border-radius: 10px;
   margin-top: 30px;
