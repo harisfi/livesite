@@ -2334,7 +2334,8 @@ ol {
   background: #fff;
 }
 
-.hero-area.style1 .hero-image img {
+.hero-area.style1 .hero-image img,
+.hero-area.style1 .hero-image2 img {
   border-radius: 10px;
 }
 
@@ -2818,15 +2819,31 @@ ol {
   width: 100%;
 }
 
+.hero-area .hero-image2 img {
+  max-width: 70%;
+}
+
+.hero-area .hi2 {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-area .hero-image {
     display: none;
+  }
+
+  .hero-area .hi2 {
+    display: block;
   }
 }
 
 @media (max-width: 767px) {
   .hero-area .hero-image {
     display: none;
+  }
+
+  .hero-area .hi2 {
+    display: block;
   }
 }
 
